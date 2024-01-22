@@ -28,9 +28,6 @@
                         <input class="form-control rounded-5 border border-3" type="text" name="pseudo" autocomplete="off" id="pseudo" placeholder="pseudo">
                     </div>
                     <div>
-                        <input class="form-control rounded-5 border border-3 mt-2" type="email" name="email" autocomplete="off" id="email" placeholder="email">
-                    </div>
-                    <div>
                         <input class="form-control rounded-5 border border-3 mt-2" type="password" autocomplete="off" name="password" id="password" placeholder="Password">
                     </div>
                     <div>
