@@ -39,9 +39,14 @@
         <div class="card card-body"><a href="">Log in / Sign In</a></div>
     </div>
 
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-8"></div>
+        </div>
+    </div>
 
-
-    <div class="container-fluid lecteur bottom-0">
+    <div class="container-fluid lecteur bottom-0 bg-secondary">
 
     </div>
 

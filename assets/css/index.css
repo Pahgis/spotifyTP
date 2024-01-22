@@ -8,6 +8,9 @@
     .menuMobile{
         display: none;
     }
+    .lecteur{
+        width: 50%;
+    }
   }
 
 
@@ -15,7 +18,7 @@
   .lecteur{
     height: 15%;
     position: absolute;
-    background-color: black;
+    
     
   }
   body{
