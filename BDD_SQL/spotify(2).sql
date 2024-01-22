@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: mysql
--- Generation Time: Jan 22, 2024 at 01:33 PM
+-- Generation Time: Jan 22, 2024 at 02:46 PM
 -- Server version: 10.6.12-MariaDB-1:10.6.12+maria~ubu2004-log
 -- PHP Version: 8.1.14
 
@@ -85,13 +85,16 @@ ALTER TABLE `albums`
 -- Indexes for table `playlist`
 --
 ALTER TABLE `playlist`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `id_users` (`id_users`);
 
 --
 -- Indexes for table `titres`
 --
 ALTER TABLE `titres`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `id_playlist` (`id_playlist`),
+  ADD KEY `id_album` (`id_album`);
 
 --
 -- Indexes for table `users`
@@ -126,6 +129,23 @@ ALTER TABLE `titres`
 --
 ALTER TABLE `users`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `playlist`
+--
+ALTER TABLE `playlist`
+  ADD CONSTRAINT `playlist_ibfk_1` FOREIGN KEY (`id_users`) REFERENCES `users` (`id`);
+
+--
+-- Constraints for table `titres`
+--
+ALTER TABLE `titres`
+  ADD CONSTRAINT `titres_ibfk_1` FOREIGN KEY (`id_playlist`) REFERENCES `playlist` (`id`),
+  ADD CONSTRAINT `titres_ibfk_2` FOREIGN KEY (`id_album`) REFERENCES `albums` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
