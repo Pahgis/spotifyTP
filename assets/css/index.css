@@ -1,0 +1,23 @@
+@media (min-width: 576px) { 
+    .menuMobile{
+        display: block;
+    }
+ }
+
+ @media (min-width: 768px) { 
+    .menuMobile{
+        display: none;
+    }
+  }
+
+
+
+  .lecteur{
+    height: 15%;
+    position: absolute;
+    background-color: black;
+    
+  }
+  body{
+    height: 100%;
+  }

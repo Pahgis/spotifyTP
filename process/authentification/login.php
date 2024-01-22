@@ -10,7 +10,7 @@
         ]);
         $user = $preparedRequest->fetch(PDO::FETCH_ASSOC);
         
-        if(password_verify($_POST["password"], $user["pwd"])){
+        if(password_verify($_POST["password"], $user["password"])){
             $_SESSION["pseudo"] = $user["pseudo"];
             $_SESSION["id"] = $user["id"];
             header('Location: ../../index.php');

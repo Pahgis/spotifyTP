@@ -9,7 +9,7 @@ if (
 
     require_once '../../config/connexion.php';
     $hashpwd = password_hash($_POST["password"], PASSWORD_DEFAULT);
-    $prepareRequest = $connexion->prepare("INSERT INTO users (pseudo, pwd) VALUES (?,?)");
+    $prepareRequest = $connexion->prepare("INSERT INTO users (pseudo, password) VALUES (?,?)");
     $prepareRequest->execute([
         $_POST["pseudo"],
         $hashpwd,
