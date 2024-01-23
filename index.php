@@ -47,7 +47,7 @@
                             <div class="col-3">
                                 <button class="btn menuMobile" type="button" data-bs-toggle="collapse" data-bs-target="#logSign" aria-expanded="false" aria-controls="logSign"><i class="fa-regular fa-user"></i> </button>
                             </div>
-                        </div>
+                                                    </div>
                     </div>
                 </div>
                 <div class="lecteur  bg-secondary  rounded-3 mt-3"></div>
@@ -59,6 +59,7 @@
 
 
     <script src="./assets/js/playeraudio.js"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 
