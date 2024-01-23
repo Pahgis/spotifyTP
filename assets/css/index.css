@@ -1,24 +1,58 @@
-@media (min-width: 576px) { 
-    .menuMobile{
-        display: block;
-    }
- }
-
- @media (min-width: 768px) { 
-    .menuMobile{
-        display: none;
-    }
-    .lecteur{
-        width: 70%;
-    }
+@media (min-width: 576px) {
+  .menuMobile {
+    display: block;
   }
 
-  .lecteur{
-    height: 15%;
-    position: absolute;
-    
-    
+  .biblio {
+    display: none;
   }
-  body{
-    height: 100%;
+
+}
+
+@media (min-width: 200px) {
+  .biblio {
+    display: none;
   }
+
+  .principal {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .menuMobile {
+    display: none;
+  }
+
+  .biblio {
+    display: block;
+  }
+
+  .principal {
+    width: 72%;
+  }
+
+}
+
+.lecteur {
+  height: 14%;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container-pc {
+  width: 100%;
+}
+
+.biblio {
+  width: 25%;
+}
+
