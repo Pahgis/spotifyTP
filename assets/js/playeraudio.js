@@ -1,0 +1,1 @@
+let monBouton document.querySelector("button")
