@@ -1,9 +1,3 @@
-
-
-<!-- requete pour recuperer mon fichier audio -->
-
-
-
 <?php
 
 require_once "../../config/connexion.php";
@@ -15,8 +9,9 @@ $preparedRequest = $connexion->prepare(
 
 
 $preparedRequest->execute();
-$song = $preparedRequest->fetchAll(PDO::FETCH_ASSOC);
+$song = $preparedRequest->fetchAll(PDO::FETCH_OBJ);
 
 
 echo json_encode($song);
+
 
