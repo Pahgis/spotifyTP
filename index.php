@@ -13,24 +13,6 @@
 <body>
 
 
-    <!-- MOBILE MENU -->
-    <div class="container-fluid mt-3">
-        <div class="row">
-            <div class="col-3">
-                <button class="btn menuMobile">
-                    <i class="fa-solid fa-house-user"></i>
-                </button>
-            </div>
-            <div class="col-6">
-                <form action="" method="post">
-                    <input type="text" name="" class="menuMobile form-control" id="">
-                </form>
-            </div>
-            <div class="col-3">
-                <button class="btn menuMobile" type="button" data-bs-toggle="collapse" data-bs-target="#logSign" aria-expanded="false" aria-controls="logSign"><i class="fa-regular fa-user"></i> </button>
-            </div>
-        </div>
-    </div>
 
 
 
@@ -39,19 +21,34 @@
         <div class="card card-body"><a href="">Log in / Sign In</a></div>
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid border container-pc" style="height: 100vh;">
         <div class="row">
-            <div class="col-4"></div>
-            <div class="col-8"></div>
+            <div class="col-3 border rounded-3 border-black m-3 biblio " style="height: 97vh;">
+            </div>
+            <div class="col-lg-9 col-12 principal my-3">
+                <div class="border border-black rounded-3" style="height: 82vh;">
+                    <div class="container-fluid menuMobile mt-3">
+                        <div class="row">
+                            <div class="col-3">
+                                <button class="btn ">
+                                    <i class="fa-solid fa-house-user"></i>
+                                </button>
+                            </div>
+                            <div class="col-6">
+                                <form action="" method="post">
+                                    <input type="text" name="" class="menuMobile form-control" id="">
+                                </form>
+                            </div>
+                            <div class="col-3">
+                                <button class="btn menuMobile" type="button" data-bs-toggle="collapse" data-bs-target="#logSign" aria-expanded="false" aria-controls="logSign"><i class="fa-regular fa-user"></i> </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lecteur  bg-secondary  rounded-3 mt-3"></div>
+            </div>
         </div>
     </div>
-
-    <div class="container-fluid lecteur bottom-0 bg-secondary end-0">
-
-    </div>
-
-
-
 
 
 
