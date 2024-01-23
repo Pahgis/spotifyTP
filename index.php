@@ -46,7 +46,7 @@
         </div>
     </div>
 
-    <div class="container-fluid lecteur bottom-0 bg-secondary">
+    <div class="container-fluid lecteur bottom-0 bg-secondary end-0">
 
     </div>
 
