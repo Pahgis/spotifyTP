@@ -36,6 +36,7 @@
 
 .lecteur {
   height: 14%;
+  overflow: hidden;
 }
 
 html {
@@ -55,4 +56,15 @@ body {
 .biblio {
   width: 25%;
 }
-
+.albumImg{
+  width: 100px;
+}
+.pause{
+  display: none;
+}
+#volume{
+  max-width: 100px;
+}
+.li:hover{
+  background-color: rgb(101, 28, 104) ;
+}
