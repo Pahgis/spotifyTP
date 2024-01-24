@@ -4,7 +4,7 @@
  console.log(input)
  let interval;
     input.addEventListener("keyup",async function(e){
-      
+      console.log(input.value)
        process(input.value)
     })
   
@@ -14,17 +14,19 @@
     function process(x){
         fetch("./process/searchbar/searchbar.php")
         .then((res)=>{
+          
             return res.json()
         })
         .then((datas)=>{
-            let p = document.querySelector(".test")
-                    p.innerHTML=""
-            console.log(datas)
+            
+            let p = document.querySelector(".test");
+            p.innerHTML=""
+           console.log(datas)
             datas.forEach(data => {
                 if(x===data["name"]){
-                    console.log("ok")
+                   console.log(data)
                     
-                    p.innerHTML+= `<p>${data["name"]}</p>`
+                    p.innerHTML+= `${data["name"]}`
                 }
             });
         })

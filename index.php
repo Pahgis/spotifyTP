@@ -25,11 +25,6 @@
         <div class="row">
             <div class="col-3 border rounded-3 border-black m-3 biblio " style="height: 97vh;">
             </div>
-            <button id="btn">Play</button>
-
-            <p id="1">Bob marley</p>
-            <audio controls src=""></audio>
-
             <div class="col-lg-9 col-12 principal my-3">
                 <div class="border border-black rounded-3" style="height: 82vh;">
                     <div class="container-fluid menuMobile mt-3">
@@ -41,7 +36,7 @@
                             </div>
                             <div class="col-6">
                                 <form action="" method="post">
-                                    <input type="text" name="" class="menuMobile form-control" id="">
+                                    <input type="text" name="" class="menuMobile form-control" id="searchbar">
                                 </form>
                             </div>
                             <div class="col-3">
@@ -49,8 +44,10 @@
                             </div>
                                                     </div>
                     </div>
+                    <p class="test"></p>
                 </div>
                 <div class="lecteur  bg-secondary  rounded-3 mt-3"></div>
+                
             </div>
         </div>
     </div>
