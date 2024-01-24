@@ -3,7 +3,6 @@
     let ajout = document.querySelector(".titreajout")
  
     input.addEventListener("keyup",async function(e){
-      console.log(input.value)
        process(input.value)
     })
   

@@ -13,13 +13,10 @@ async function getmp3(cliqueId) {
             return res.json()
         })
         .then((datas) => {
-           
-            
             let img = document.querySelector(".albumImg")
             audio.src=""
             datas.forEach(data => {
                 if (data["id"] === cliqueId) {
-                  
                     audio.src = data['link']
                     img.src=data["image_album"]
                     audio.play()
