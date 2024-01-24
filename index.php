@@ -45,6 +45,7 @@
                         </div>
                     </div>
 
+
                         <div class="container-fluid d-flex justify-content-evenly flex-column flex-md-row">
 
                             <div class="text-center">
@@ -81,12 +82,40 @@
 
                 </div>
                 
+
+                    <!-- AJOUT TITRE CHANSON  -->
+                    <div style="height: 20%;"></div>
+                    <div>
+                        <ul class="titreajout"></ul>
+                    </div>
+                    
+                </div>
+                <div class="row lecteur  bg-secondary  rounded-3 mt-3">
+                    <div class="col-4 d-flex align-items-center ">
+                        <img class="albumImg rounded-3" src="" alt="">
+                    </div>
+
+
+                    <div class="col-4 d-flex text-center gap-3 justify-content-center align-items-center text-white">
+                        <i class="fa-solid fa-backward fa-lg"></i>
+
+                        <i class="btn fa-regular fa-circle-play fa-lg play text-white"></i>
+                        <i class="fa-regular fa-circle-pause pause btn fa-lg text-white"></i>
+                        <i class="fa-solid fa-forward fa-lg"></i>
+                      
+                    </div>
+                    <div class="col-4 d-flex text-center justify-content-center align-items-center">
+                            <input type="range" class="form-range" id="volume" name="volume" min="0" max="10" />
+                            
+                        </div>
+                </div>
+
             </div>
         </div>
     </div>
 
 
-
+    <audio class="audio" src=""></audio>
 
     <script src="./assets/js/playeraudio.js"></script>
     <script src="./assets/js/searchbar.js"></script>

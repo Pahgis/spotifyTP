@@ -30,12 +30,18 @@
   .principal {
     width: 72%;
   }
-
+.button-36 {
+    padding: 0 2.6rem;
+  }
 }
 
 .lecteur {
   height: 14%;
+
   background-color: #444444 !important;
+
+
+  overflow: hidden;
 
 }
 
@@ -57,6 +63,7 @@ body {
 .biblio {
   width: 25%;
 }
+
 
 
 .bodyMobile{
@@ -98,13 +105,22 @@ body {
   transition-duration: .1s;
 }
 
-@media (min-width: 768px) {
-  .button-36 {
-    padding: 0 2.6rem;
-  }
-}
+
 
 .Boxshad:hover {
 box-shadow: #00d5ff 0 1px 10px;
   transition-duration: .1s;
 }
+.albumImg{
+  width: 100px;
+}
+.pause{
+  display: none;
+}
+#volume{
+  max-width: 100px;
+}
+.li:hover{
+  background-color: rgb(101, 28, 104) ;
+}
+
