@@ -10,7 +10,7 @@
     <title>Document</title>
 </head>
 
-<body>
+<body class="bg-dark">
 
 
 
@@ -25,8 +25,8 @@
         <div class="row">
             <div class="col-3 border rounded-3 border-black m-3 biblio " style="height: 97vh;">
             </div>
-            <div class="col-lg-9 col-12 principal my-3">
-                <div class="border border-black rounded-3" style="height: 82vh;">
+            <div class="col-lg-9 col-12 principal my-3 ">
+                <div class="bodyMobile border border-black rounded-3 overflow-scroll" style="height: 82vh;">
                     <div class="container-fluid menuMobile mt-3">
                         <div class="row">
                             <div class="col-3">
@@ -42,11 +42,44 @@
                             <div class="col-3">
                                 <button class="btn menuMobile" type="button" data-bs-toggle="collapse" data-bs-target="#logSign" aria-expanded="false" aria-controls="logSign"><i class="fa-regular fa-user"></i> </button>
                             </div>
-                                                    </div>
+                        </div>
                     </div>
-                    <p class="test"></p>
+
+                        <div class="container-fluid d-flex justify-content-evenly flex-column flex-md-row">
+
+                            <div class="text-center">
+                                    <p class="fs-2">ALBUMS</p>
+                            </div>
+
+                            <div>
+                            <button class="button-36" role="button">S'inscrire</button>
+                            <button class="button-36" role="button">Se connecter</button>
+                            </div>
+
+
+                            <div>
+                                    <img class="rounded mx-auto d-block mt-5 Boxshad" height="300px" src="./pochette/Bob.jpg">
+                            </div>
+
+                            <div>
+                                    <img class="rounded mx-auto d-block mt-5 Boxshad" height="300px" src="./pochette/mutter.jpg">
+                            </div>
+
+                            <div>
+                                    <img class="rounded mx-auto d-block mt-5 Boxshad" height="300px" src="./pochette/Boby.jpg">
+                            </div>
+
+                        </div>
+
+                            <div>
+                                    <img class="rounded mx-auto d-block mt-5 Boxshad" height="300px" src="./pochette/eminem.jpg">
+                            </div>
+
+
                 </div>
-                <div class="lecteur  bg-secondary  rounded-3 mt-3"></div>
+                    <div class="lecteur  bg-secondary  rounded-3 mt-3">
+
+                </div>
                 
             </div>
         </div>
