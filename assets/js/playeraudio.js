@@ -13,12 +13,16 @@ async function getmp3(cliqueId) {
             return res.json()
         })
         .then((datas) => {
+            
             let img = document.querySelector(".albumImg")
-            audio.src=""
+            audio.src = ""
             datas.forEach(data => {
-                if (data["id"] === cliqueId) {
+             
+                if (data["id"] == cliqueId) {
                     audio.src = data['link']
+                    console.log("ok")
                     img.src=data["image_album"]
+                    console.log(audio)
                     audio.play()
                     pause.style.display ="block"
                     play.style.display="none"
@@ -28,19 +32,19 @@ async function getmp3(cliqueId) {
 
 
 }
-let li = document.querySelectorAll("li")
 
-li.forEach(el => {
-   el.addEventListener("click", function(e){
-    console.log(e.target)
-    getmp3(e.target.id)
-   })
-});
 
 window.addEventListener("click", function (e) {
     
+    if(e.target.localName == "li"){
+        let li = document.querySelectorAll("li")
+
     
-    console.log(audio)
+            getmp3(e.target.id)
+           
+        
+    }
+    console.log(e.target)
 if(e.target === pause){
     pause.style.display="none"
     play.style.display="block"
@@ -58,3 +62,26 @@ volume.addEventListener("change",function(){
    
     audio.volume= volume.value/10
 })
+
+let ajout = document.querySelector(".albumlist")
+function album(name){
+   
+    console.log(ajout)
+    fetch("./process/playlist/album.php")
+    .then((res)=>{
+        return res.json()
+    })
+    .then((datas)=>{
+        ajout.innerHTML = ""
+        console.log(datas)
+        let li = document.createElement("li")
+        ajout.append(li)
+        datas.forEach(data => {
+            if(data["name_artist"] === name){
+                ajout.innerHTML += `${data["name"]}`
+            }
+        });
+    })
+}
+
+album(Rammstein)
