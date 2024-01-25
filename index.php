@@ -46,72 +46,85 @@
                     </div>
 
 
-                        <div class="container-fluid d-flex justify-content-evenly flex-column flex-md-row">
+                    <div class="container-fluid">
 
-                            <div class="text-center">
-                                    <p class="fs-2">ALBUMS</p>
-                            </div>
+         
 
-                            <div>
-                            <button class="button-36" role="button">S'inscrire</button>
+                        <div class="d-flex justify-content-end flex-column flex-md-row">
+                            <button class="button-36 me-3" role="button">S'inscrire</button>
                             <button class="button-36" role="button">Se connecter</button>
-                            </div>
-
-
-                            <div>
-                                    <img class="rounded mx-auto d-block mt-5 Boxshad" height="300px" src="./pochette/Bob.jpg">
-                            </div>
-
-                            <div>
-                                    <img class="rounded mx-auto d-block mt-5 Boxshad" height="300px" src="./pochette/mutter.jpg">
-                            </div>
-
-                            <div>
-                                    <img class="rounded mx-auto d-block mt-5 Boxshad" height="300px" src="./pochette/Boby.jpg">
-                            </div>
-
                         </div>
 
-                            <div>
-                                    <img class="rounded mx-auto d-block mt-5 Boxshad" height="300px" src="./pochette/eminem.jpg">
-                            </div>
 
 
-                </div>
-                    <div class="lecteur  bg-secondary  rounded-3 mt-3">
+<!-- test -->
 
-                </div>
-                
+<div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
 
-                    <!-- AJOUT TITRE CHANSON  -->
-                    <div style="height: 20%;"></div>
-                    <div>
-                        <ul class="titreajout"></ul>
-                    </div>
-                    
-                </div>
-                <div class="row lecteur  bg-secondary  rounded-3 mt-3">
-                    <div class="col-4 d-flex align-items-center ">
-                        <img class="albumImg rounded-3" src="" alt="">
-                    </div>
+        <div class="carousel-item active">
+            <img class="rounded mx-auto d-block mt-5 Boxshad" height="300px" src="./pochette/Bob.jpg">
+        </div>
+
+        <div class="carousel-item">
+            <img class="rounded mx-auto d-block mt-5 Boxshad" height="300px" src="./pochette/mutter.jpg">
+        </div>
+
+        <div class="carousel-item">
+            <img class="rounded mx-auto d-block mt-5 Boxshad" height="300px" src="./pochette/Boby.jpg">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
 
 
-                    <div class="col-4 d-flex text-center gap-3 justify-content-center align-items-center text-white">
-                        <i class="fa-solid fa-backward fa-lg"></i>
 
-                        <i class="btn fa-regular fa-circle-play fa-lg play text-white"></i>
-                        <i class="fa-regular fa-circle-pause pause btn fa-lg text-white"></i>
-                        <i class="fa-solid fa-forward fa-lg"></i>
-                      
-                    </div>
-                    <div class="col-4 d-flex text-center justify-content-center align-items-center">
-                            <input type="range" class="form-range" id="volume" name="volume" min="0" max="10" />
-                            
-                        </div>
+</div>
+
+           
+
+
+                <!-- AJOUT TITRE CHANSON  -->
+                <div style="height: 20%;"></div>
+                <div>
+                    <ul class="titreajout"></ul>
                 </div>
 
             </div>
+            <div class="row lecteur  bg-secondary  rounded-3 mt-3">
+                <div class="col-4 d-flex align-items-center ">
+                    <img class="albumImg rounded-3" src="" alt="">
+                </div>
+
+
+                <div class="col-4 d-flex text-center gap-3 justify-content-center align-items-center text-white">
+                    <i class="fa-solid fa-backward fa-lg"></i>
+
+                    <i class="btn fa-regular fa-circle-play fa-lg play text-white"></i>
+                    <i class="fa-regular fa-circle-pause pause btn fa-lg text-white"></i>
+                    <i class="fa-solid fa-forward fa-lg"></i>
+
+                </div>
+                <div class="col-4 d-flex text-center justify-content-center align-items-center">
+                    <input type="range" class="form-range" id="volume" name="volume" min="0" max="10" />
+
+                </div>
+            </div>
+
         </div>
+    </div>
     </div>
 
 

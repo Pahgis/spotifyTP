@@ -6,6 +6,9 @@
   .biblio {
     display: none;
   }
+
+
+
 }
 
 @media (min-width: 200px) {
@@ -16,7 +19,14 @@
   .principal {
     width: 100%;
   }
+
+  .button-36 {
+
+    display: none;
+  }
+
 }
+
 
 @media (min-width: 768px) {
   .menuMobile {
@@ -32,7 +42,11 @@
   }
 .button-36 {
     padding: 0 2.6rem;
+    display: block;
   }
+
+
+
 }
 
 .lecteur {
@@ -88,9 +102,10 @@ body {
   cursor: pointer;
   flex-shrink: 0;
   font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  height: 4rem;
+  font-size: 14px;
+  font-weight: 400;
+  height: 2rem;
+  width: 10rem;
   padding: 0 1.6rem;
   text-align: center;
   text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
