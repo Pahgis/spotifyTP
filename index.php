@@ -45,50 +45,59 @@
                         </div>
                     </div>
 
+                    <!--
+                    <div class="container-fluid ">
 
-                        <div class="container-fluid d-flex justify-content-evenly flex-column flex-md-row">
-
-                            <div class="text-center">
-                                    <p class="fs-2">ALBUMS</p>
-                            </div>
-
-                            <div>
+                        <div>
                             <button class="button-36" role="button">S'inscrire</button>
                             <button class="button-36" role="button">Se connecter</button>
+                        </div>
+                        <div class="d-flex justify-content-evenly flex-column flex-md-row">
+                            <div class="text-center">
+                                <p class="fs-2">ALBUMS</p>
                             </div>
 
 
+
+
                             <div>
-                                    <img class="rounded mx-auto d-block mt-5 Boxshad" height="300px" src="./pochette/Bob.jpg">
+                                <img class="rounded mx-auto d-block mt-5 Boxshad" height="300px" src="./pochette/Bob.jpg">
                             </div>
 
                             <div>
-                                    <img class="rounded mx-auto d-block mt-5 Boxshad" height="300px" src="./pochette/mutter.jpg">
+                                <img class="rounded mx-auto d-block mt-5 Boxshad" height="300px" src="./pochette/mutter.jpg">
                             </div>
 
                             <div>
-                                    <img class="rounded mx-auto d-block mt-5 Boxshad" height="300px" src="./pochette/Boby.jpg">
+                                <img class="rounded mx-auto d-block mt-5 Boxshad" height="300px" src="./pochette/Boby.jpg">
                             </div>
 
                         </div>
-
-                            <div>
-                                    <img class="rounded mx-auto d-block mt-5 Boxshad" height="300px" src="./pochette/eminem.jpg">
-                            </div>
+                    </div>
 
 
-                </div>
-                    <div class="lecteur  bg-secondary  rounded-3 mt-3">
+                    <div>
+                        <img class="rounded mx-auto d-block mt-5 Boxshad" height="300px" src="./pochette/eminem.jpg">
+                    </div>
+-->
 
-                </div>
-                
+
+
+
 
                     <!-- AJOUT TITRE CHANSON  -->
+                    <div class="albumlist">
+                        <div>
+                            <div class="imgAlbum"></div>
+                            <div class="nomAlbum"></div>
+                        </div>
+                                <ul class="albumlist"></ul>
+                    </div>
                     <div style="height: 20%;"></div>
                     <div>
                         <ul class="titreajout"></ul>
                     </div>
-                    
+
                 </div>
                 <div class="row lecteur  bg-secondary  rounded-3 mt-3">
                     <div class="col-4 d-flex align-items-center ">
@@ -102,12 +111,12 @@
                         <i class="btn fa-regular fa-circle-play fa-lg play text-white"></i>
                         <i class="fa-regular fa-circle-pause pause btn fa-lg text-white"></i>
                         <i class="fa-solid fa-forward fa-lg"></i>
-                      
+
                     </div>
                     <div class="col-4 d-flex text-center justify-content-center align-items-center">
-                            <input type="range" class="form-range" id="volume" name="volume" min="0" max="10" />
-                            
-                        </div>
+                        <input type="range" class="form-range" id="volume" name="volume" min="0" max="10" />
+
+                    </div>
                 </div>
 
             </div>

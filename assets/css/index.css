@@ -69,7 +69,7 @@ body {
 .bodyMobile{
 
   background-color: #444444 !important;
-
+max-height: 82vh;
 }
 
 
