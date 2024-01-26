@@ -11,6 +11,9 @@
 </head>
 
 <body class="bg-dark">
+	
+add sql
+	
 
 
 
@@ -24,9 +27,16 @@
     <div class="container-fluid border container-pc" style="height: 100vh;">
         <div class="row">
             <div class="col-3 border rounded-3 border-black m-3 biblio " style="height: 97vh;">
+            <div style="height: 40%;">
                 <form action="" method="post">
                     <input type="text" name="" class="form-control" id="searchbar2">
                 </form>
+            </div>
+            <div>
+                <h3 class="text-white">Playlist</h3>
+                <ul class="playlist"></ul>
+            </div>
+                
             </div>
             <div class="col-lg-9 col-12 principal my-3 ">
                 <div class="bodyMobile border border-black rounded-3 overflow-scroll" style="height: 82vh;">
@@ -48,8 +58,6 @@
                         </div>
                     </div>
 
-                   
-
 
 
     <div class="container-fluid">
@@ -68,48 +76,19 @@
     
            
 
-                        <!-- test -->
-
-                        <!-- <div id="carouselExampleIndicators" class="carousel slide carrouselOn">
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            </div>
-                            <div class="carousel-inner">
-
-                                <div class="carousel-item active">
-                                    <img id="5" class="rounded mx-auto d-block mt-5 Boxshad" height="300px" src="./pochette/Bob.jpg" name="album">
-                                </div>
-
-                                <div class="carousel-item">
-                                    <img id="3" class="rounded mx-auto d-block mt-5 Boxshad" height="300px" src="./pochette/mutter.jpg" name="album">
-                                </div>
-
-                                <div class="carousel-item">
-                                    <img id="7" class="rounded mx-auto d-block mt-5 Boxshad" height="300px" src="./pochette/hollow.jpeg" name="album">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>  -->
+               
 
 
    <!-- CARD -->
 
 <section class="d-flex cardlist">
-                    <section  id="" >
 
+                    <section  id="" >
+                        
                         <div class="card cardcenter m-5 cardBg">
                             <img src="./pochette/IronMaiden.jpeg" class="card-img-top" alt="...">
                         </div>
-                    
+                        
                     </section>
 
 
@@ -241,24 +220,38 @@
 
                     </section>
 
+
+                
+
 </section>
+                    <div class="d-flex">
+                    
+                        <div class="card cardcenter m-5 cardPlayslit">
+                            <img src="./pochette/metal.jpg" class="card-img-top" alt="...">
+                        </div>
+                     
+                        <div class="card cardcenter m-5 cardPlayslit steph" style="background-image: url('./pochette/Head.jpg');">
+                            <img  src="./pochette/Head_zoom.png" class="card-img-top crane" alt="...">
+                        </div>
 
+                        <div class="card cardcenter m-5 cardPlayslit">
+                            <img src="./pochette/metal.jpg" class="card-img-top" alt="...">
+                        </div>
 
-
-                  
-                        <div>
+                    <div> 
+                        
+                        
                             <div class="imgAlbum"></div>
                             <div class="nomAlbum"></div>
                         </div>
                         <ul class="albumlist"></ul>
 
 
-
-
-
                     </div>
 
+                </div>
 
+               
 
 
                     <!-- AJOUT TITRE CHANSON  -->

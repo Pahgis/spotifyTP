@@ -86,7 +86,9 @@ body {
 max-height: 82vh;
 }
 
-
+li{
+  max-width: 400px;
+}
 
 
 
@@ -197,14 +199,17 @@ img {
     margin-top: 20px;
     box-shadow: #00d5ff 0 1px 19px;
     transition-duration: .1s;
-  
+    
 
 
 }
 
-.cardlist {
+.cardlist{
 
-  overflow-x: scroll;
+  overflow-x: scroll; 
+  scrollbar-color: #00d5ff rgba(0, 0, 0, 0.322);
+  scrollbar-width: 30px; 
+  
 }
 
 .card:hover {
@@ -217,9 +222,32 @@ img {
   transition: all 0.3s;
 }
 
-/* .cardBg {
 
-  background-color: #444444;
-  color: #ffffff;
+
+.cardPlaylist {
+
+  display : flex ;
+  justify-content : center ;
+
   
-} */
+  
+} 
+
+
+.crane:hover {
+  
+  -ms-transform: scale(1.5); /* IE 9 */
+-webkit-transform: scale(1.5); /* Safari 3-8 */
+transform: scale(2);
+transform: translateX(90px);  
+}
+  
+ 
+.steph {
+
+  background-size: cover;
+}
+
+
+/* Texte apparition au survol */
+
