@@ -86,7 +86,9 @@ body {
 max-height: 82vh;
 }
 
-
+li{
+  max-width: 400px;
+}
 
 
 
