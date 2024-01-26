@@ -3,7 +3,8 @@ let audio = document.querySelector(".audio")
 let play = document.querySelector(".play")
 let pause = document.querySelector(".pause")
 let volume= document.querySelector("#volume")
-
+let carrousel = document.querySelector(".carrouselOn")
+let ajouts = document.querySelector(".albumlist")
 async function getmp3(cliqueId) {
 
 
@@ -24,6 +25,7 @@ async function getmp3(cliqueId) {
                     img.src=data["image_album"]
                     console.log(audio)
                     audio.play()
+                    console.log(audio.duration)
                     pause.style.display ="block"
                     play.style.display="none"
                 }
@@ -35,7 +37,7 @@ async function getmp3(cliqueId) {
 
 
 window.addEventListener("click", function (e) {
-    
+    console.log(e.target)
     if(e.target.localName == "li"){
         let li = document.querySelectorAll("li")
 
@@ -55,7 +57,10 @@ if(e.target === pause){
     play.style.display="none"
     audio.play();
 }
-    
+if (e.target.name =="album"){
+    carrousel.style.display="none"
+    album(e.target.id)
+}
 })
 
 volume.addEventListener("change",function(){
@@ -63,25 +68,26 @@ volume.addEventListener("change",function(){
     audio.volume= volume.value/10
 })
 
-let ajout = document.querySelector(".albumlist")
-function album(name){
+
+
+function album(id){
    
-    console.log(ajout)
+   
     fetch("./process/playlist/album.php")
     .then((res)=>{
+       
         return res.json()
     })
     .then((datas)=>{
-        ajout.innerHTML = ""
-        console.log(datas)
+        ajouts.innerHTML = ""
+       
         let li = document.createElement("li")
-        ajout.append(li)
-        datas.forEach(data => {
-            if(data["name_artist"] === name){
-                ajout.innerHTML += `${data["name"]}`
+        ajouts.append(li)
+        for (i = 0; i < datas.length; i++) { 
+            if (datas[i]["id_album"]==id) {
+                ajouts.innerHTML+= `<li id="${datas[i]["id"]}" class="card mb-1 py-2 ps-2 border border-black cardPerso" >${datas[i]["name_artist"]} : ${datas[i]["name"]} </li>`
             }
-        });
+        }
     })
 }
 
-album(Rammstein)
