@@ -140,7 +140,7 @@ box-shadow: #00d5ff 0 1px 10px;
 }
 
 
-/* Carousel */
+/* Carousel
 
 * {
   box-sizing: border-box;
@@ -173,7 +173,7 @@ img {
   height: 100%;
   transition: transform 0.2s ease-in-out;
 } */
-.card-container {
+/* .card-container {
   width: 275px;
   height: 400px;
   flex-shrink: 0;
@@ -183,6 +183,43 @@ img {
   .card-container {
     width: 184px;
   }
+} */ 
+
+
+
+/* CARD  */
+
+.cardcenter
+{
+    width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    box-shadow: #00d5ff 0 1px 19px;
+    transition-duration: .1s;
+  
+
+
 }
 
+.cardlist {
 
+  overflow-x: scroll;
+}
+
+.card:hover {
+
+  transform: scale(1.11);
+}
+
+.card {
+
+  transition: all 0.3s;
+}
+
+/* .cardBg {
+
+  background-color: #444444;
+  color: #ffffff;
+  
+} */

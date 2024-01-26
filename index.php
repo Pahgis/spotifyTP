@@ -48,42 +48,8 @@
                         </div>
                     </div>
 
-                    <!--
-                    <div class="container-fluid ">
+                   
 
-
-                        <div>
-                            <button class="button-36" role="button">S'inscrire</button>
-                            <button class="button-36" role="button">Se connecter</button>
-                        </div>
-                        <div class="d-flex justify-content-evenly flex-column flex-md-row">
-                            <div class="text-center">
-                                <p class="fs-2">ALBUMS</p>
-                            </div>
-
-
-
-
-                            <div>
-                                <img class="rounded mx-auto d-block mt-5 Boxshad" height="300px" src="./pochette/Bob.jpg">
-                            </div>
-
-                            <div>
-                                <img class="rounded mx-auto d-block mt-5 Boxshad" height="300px" src="./pochette/mutter.jpg">
-                            </div>
-
-                            <div>
-                                <img class="rounded mx-auto d-block mt-5 Boxshad" height="300px" src="./pochette/Boby.jpg">
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                    <div>
-                        <img class="rounded mx-auto d-block mt-5 Boxshad" height="300px" src="./pochette/eminem.jpg">
-                    </div>
--->
 
 
     <div class="container-fluid">
@@ -97,55 +63,14 @@
 
 
 
-/*
-
-                <div id="carouselExampleIndicators" class="carousel slide">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-
-                            <div class="carousel-item active d-flex">
-                                <img class="rounded mx-auto d-block mt-5 Boxshad" height="300px" src="./pochette/Bob.jpg">
-                        
-                                <img class="rounded mx-auto d-block mt-5 Boxshad" height="300px" src="./pochette/mutter.jpg">
-                           
-                                <img class="rounded mx-auto d-block mt-5 Boxshad" height="300px" src="./pochette/Boby.jpg">
-                            </div>
-
-                            <div class="carousel-item active d-flex">
-                                <img class="rounded mx-auto d-block mt-5 Boxshad" height="300px" src="./pochette/eminem.jpg">
-                        
-                                <img class="rounded mx-auto d-block mt-5 Boxshad" height="300px" src="./pochette/Boby.jpg">
-                           
-                                <img class="rounded mx-auto d-block mt-5 Boxshad" height="300px" src="./pochette/mutter.jpg">
-                            </div>
-                    
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>  
-
-            <div class="">
-                <img src="./pochette/hollow.jpeg">
-            </div>    
     
-    </div>
 
     
            
-*/
+
                         <!-- test -->
 
-                        <div id="carouselExampleIndicators" class="carousel slide carrouselOn">
+                        <!-- <div id="carouselExampleIndicators" class="carousel slide carrouselOn">
                             <div class="carousel-indicators">
                                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -173,7 +98,150 @@
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Next</span>
                             </button>
+                        </div>  -->
+
+
+   <!-- CARD -->
+
+<section class="d-flex cardlist">
+                    <section  id="" >
+
+                        <div class="card cardcenter m-5 cardBg">
+                            <img src="./pochette/IronMaiden.jpeg" class="card-img-top" alt="...">
                         </div>
+                    
+                    </section>
+
+
+
+                    <section  id="" >
+
+                        <div class="card cardcenter m-5 cardBg">
+                            <img src="pochette/Hardwell.jpg" class="card-img-top" alt="...">  
+                        </div>
+                    
+                    </section>
+
+
+                    <section  id="" >
+
+                        <div class="card cardcenter m-5 cardBg">
+                            <img src="./pochette/Daft-Punk.jpg" class="card-img-top" alt="...">
+                            
+                        </div>
+                    
+                    </section>
+
+
+                    <section  id="" >
+
+                        <div class="card cardcenter m-5 cardBg">
+                            <img src="./pochette/GOT.jpg" class="card-img-top" alt="...">
+                            
+                        </div>
+                    
+                    </section>
+
+
+                    <section  id="" >
+
+                        <div class="card cardcenter m-5 cardBg">
+                            <img src="./pochette/Travisscott.jpg" class="card-img-top" alt="...">
+                            
+                        </div>
+                    
+                    </section>
+
+                    <section  id="" >
+
+                        <div class="card cardcenter m-5 cardBg">
+                            <img src="./pochette/eminem.jpg" class="card-img-top" alt="...">
+                            
+                        </div>
+                    
+                    </section>
+
+
+                    <section  id="" >
+
+                        <div class="card cardcenter m-5 cardBg">
+                            <img src="./pochette/Stickfigure.jpg" class="card-img-top" alt="...">
+                            
+                        </div>
+
+                    </section>
+
+
+                    <section  id="" >
+
+                        <div class="card cardcenter m-5 cardBg">
+                            <img src="./pochette/Boby.jpg" class="card-img-top" alt="...">
+                            
+                        </div>
+
+                    </section>
+
+
+                    <section  id="" >
+
+                        <div class="card cardcenter m-5 cardBg">
+                            <img src="./pochette/Scarface.jpg" class="card-img-top" alt="...">
+                            
+                        </div>
+
+                    </section>
+
+
+                    <section  id="" >
+
+                        <div class="card cardcenter m-5 cardBg">
+                            <img src="./pochette/bob.jpeg" class="card-img-top" alt="...">
+                            
+                        </div>
+
+                    </section>
+
+
+                    <section  id="" >
+
+                        <div class="card cardcenter m-5 cardBg">
+                            <img src="./pochette/hollow.jpeg" class="card-img-top" alt="...">
+                            
+                        </div>
+
+                    </section>
+
+
+                    <section  id="" >
+
+                        <div class="card cardcenter m-5 cardBg">
+                            <img src="./pochette/mutter.jpg" class="card-img-top" alt="...">
+                            
+                        </div>
+
+                    </section>
+
+
+                    <section  id="" >
+
+                        <div class="card cardcenter m-5 cardBg">
+                            <img src="./pochette/Testament.jpg" class="card-img-top" alt="...">
+                            
+                        </div>
+
+                    </section>
+
+
+                    <section  id="" >
+
+                        <div class="card cardcenter m-5 cardBg">
+                            <img src="./pochette/Bob.jpg" class="card-img-top" alt="...">
+                            
+                        </div>
+
+                    </section>
+
+</section>
 
 
 
