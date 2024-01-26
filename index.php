@@ -178,11 +178,11 @@
 
 
                     <div class="col-4 d-flex text-center gap-3 justify-content-center align-items-center text-white">
-                        <i class="fa-solid fa-backward fa-lg"></i>
+                        <i class="fa-solid fa-backward fa-lg precedent"></i>
 
                         <i class="btn fa-regular fa-circle-play fa-lg play text-white"></i>
                         <i class="fa-regular fa-circle-pause pause btn fa-lg text-white"></i>
-                        <i class="fa-solid fa-forward fa-lg"></i>
+                        <i class="fa-solid fa-forward fa-lg suivant"></i>
 
 
                     </div>

@@ -5,10 +5,32 @@ let pause = document.querySelector(".pause")
 let volume= document.querySelector("#volume")
 let carrousel = document.querySelector(".carrouselOn")
 let ajouts = document.querySelector(".albumlist")
+let suivant = document.querySelector(".suivant")
+let precedent = document.querySelector(".precedent")
+let f = 0
+suivant.addEventListener("click", function(e){
+    let ids = document.querySelectorAll(".addpl")
+    console.log(ids)
+    f++
+    if(f > ids.length - 1){
+        f = 0
+    }
+    getmp3(ids[f].id)
+   
+    
+})
+precedent.addEventListener("click", function(e){
+    let ids = document.querySelectorAll(".addpl")
+    f--
+    if(f < 0){
+        f = 0
+    }
+    getmp3(ids[f].id)
+})
 
 async function getmp3(cliqueId) {
 
-
+   
     fetch("./process/searchbar/searchbar.php")
         .then((res) => {
           
@@ -93,7 +115,9 @@ function album(id){
         }
     })
 }
-let incre = 1;
+let incre = 1; 
+let suiv = 0
+let array=[]
 function addplaylist(id){
 
     let playlist = document.querySelector(".playlist")
@@ -103,22 +127,22 @@ function addplaylist(id){
         return res.json()
     })
     .then((datas)=>{
-        let array;
+       
         datas.forEach(element => {
             if (id == element["id"]) {
                 if(incre === 1){
                     getmp3(id)
                 }
-                playlist.innerHTML  += `<li id="${element["id"]}" data-id="${incre}" class="card mb-1 py-2 ps-2 border border-black cardPerso" >${element["name_artist"]} : ${element["name"]} <button class="btn addplay" id="${element["id"]}"></button></li>`
+                playlist.innerHTML  += `<li id="${element["id"]}" data-id="${incre}" class="addpl card mb-1 py-2 ps-2 border border-black cardPerso" >${element["name_artist"]} : ${element["name"]} <button class="btn addplay" id="${element["id"]}"></button></li>`
                 incre++;
-                array.push(`data-id="${incre}"`)
-                console.log(array)
+                array.push(element["id"])
+               
             }
         });
         
     })
 }
-
+ console.log(array)
 
 const songs = document.querySelectorAll('data-id');
 songs.forEach(song => song.ontimeupdate = nextSong);
@@ -140,10 +164,9 @@ songs.forEach(song => song.ontimeupdate = nextSong);
 
     audio.addEventListener("timeupdate", function(e){
         const end = this.duration;   
-        console.log(end)
 
       let now = this.currentTime;    
       if (end == now) {
-        console.log("ok")
+        
       }
     })
