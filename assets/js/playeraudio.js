@@ -1,5 +1,6 @@
 
 let audio = document.querySelector(".audio")
+let audio2 = document.querySelector(".audio2")
 let play = document.querySelector(".play")
 let pause = document.querySelector(".pause")
 let volume= document.querySelector("#volume")
@@ -19,6 +20,37 @@ suivant.addEventListener("click", function(e){
    
     
 })
+
+audio.addEventListener("timeupdate", function(e){
+    let ids = document.querySelectorAll(".addpl")
+    let end = audio.duration
+    let now = audio.currentTime
+    if((end-now) < 5){
+        audio.volume = audio.volume *0.2
+        
+    }
+    if((end-now) < 4){
+        audio.volume = audio.volume *0.2
+        
+    }
+    if((end-now) <  3){
+        audio.volume = audio.volume *0.2
+        
+    }
+    if((end-now) <  2){
+        audio.volume = audio.volume *0.2
+        
+    }
+    if((end-now) <  1){
+        audio.volume = audio.volume *0.2
+        
+    }
+    if(end == 0){
+        audio.classList.remove("audio")
+        audio2.classList.remove("audio2")
+    }
+})
+
 precedent.addEventListener("click", function(e){
     let ids = document.querySelectorAll(".addpl")
     f--
@@ -46,9 +78,7 @@ async function getmp3(cliqueId) {
                     audio.src = data['link']
                     console.log("ok")
                     img.src=data["image_album"]
-                    console.log(audio)
                     audio.play()
-                    console.log(audio.duration)
                     pause.style.display ="block"
                     play.style.display="none"
                 }
@@ -144,29 +174,3 @@ function addplaylist(id){
 }
  console.log(array)
 
-const songs = document.querySelectorAll('data-id');
-songs.forEach(song => song.ontimeupdate = nextSong);
-    
-  
-    function nextSong(e) {
-      const end = this.duration;   
-      let now = this.currentTime;    
-      if (end <= now) {
-        const position = songs.indexOf(this);
-        if (position === songs.length - 1) {
-          songs[0].play();
-        } else {
-          songs[position + 1].play();
-        }
-      }
-    }
-
-
-    audio.addEventListener("timeupdate", function(e){
-        const end = this.duration;   
-
-      let now = this.currentTime;    
-      if (end == now) {
-        
-      }
-    })
