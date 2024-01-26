@@ -37,7 +37,7 @@
         
             for (i = 0; i < datas.length; i++) { 
                 if (datas[i]["name"].toLowerCase().includes(x) && x != "") {
-                    ajout.innerHTML+= `<li id="${datas[i]["id"]}" class="card mb-1 py-2 ps-2 border border-black cardPerso" >${datas[i]["name_artist"]} : ${datas[i]["name"]} </li>`
+                    ajout.innerHTML+= `<li id="${datas[i]["id"]}" class="card mb-1 py-2 ps-2 border border-black cardPerso" >${datas[i]["name_artist"]} : ${datas[i]["name"]}   <button class="btn addplay" id="${datas[i]["id"]}">Add</button></li>`
                 }
             }
         })
