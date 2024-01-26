@@ -2,22 +2,20 @@
     let input = document.querySelector('#searchbar1')
     let input1 = document.querySelector('#searchbar2')
     let ajout = document.querySelector(".titreajout")
-    let carrousels = document.querySelector(".carrouselOn")
+    let accueil = document.querySelector(".accueil")
     input.addEventListener("keyup",function(e){
-        if(input.value==""){
-            carrousels.style.display = "block"
+        if(input.value===""){
+            accueil.style.display ="block"
         }
-        carrousels.style.display = "none"
+        accueil.style.setProperty("display","none","important")
        process(input.value)
-       console.log("ok")
     })
     input1.addEventListener("keyup",function(e){
         if(input1.value==""){
-            carrousels.style.display = "block"
+            accueil.style.display = "block"
         }
-        carrousels.style.display = "none"
+        accueil.style.setProperty("display","none","important")
         process(input1.value)
-        console.log("ok")
      })
 
 

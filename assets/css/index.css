@@ -1,3 +1,6 @@
+*{
+  scrollbar-color: green;
+}
 @media (min-width: 576px) {
   .menuMobile {
     display: block;
@@ -193,7 +196,7 @@ img {
 
 .cardcenter
 {
-    width: 30rem;
+    width: 17rem;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
@@ -225,3 +228,4 @@ img {
   color: #ffffff;
   
 } */
+
