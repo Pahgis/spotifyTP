@@ -24,6 +24,9 @@
     <div class="container-fluid border container-pc" style="height: 100vh;">
         <div class="row">
             <div class="col-3 border rounded-3 border-black m-3 biblio " style="height: 97vh;">
+                <form action="" method="post">
+                    <input type="text" name="" class="form-control" id="searchbar2">
+                </form>
             </div>
             <div class="col-lg-9 col-12 principal my-3 ">
                 <div class="bodyMobile border border-black rounded-3 overflow-scroll" style="height: 82vh;">
@@ -36,7 +39,7 @@
                             </div>
                             <div class="col-6">
                                 <form action="" method="post">
-                                    <input type="text" name="" class="menuMobile form-control" id="searchbar">
+                                    <input type="text" name="" class="menuMobile form-control" id="searchbar1">
                                 </form>
                             </div>
                             <div class="col-3">
@@ -85,7 +88,7 @@
 
                     <div class="container-fluid">
 
-         
+
 
                         <div class="d-flex justify-content-end flex-column flex-md-row">
                             <button class="button-36 me-3" role="button">S'inscrire</button>
@@ -94,83 +97,76 @@
 
 
 
-<!-- test -->
+                        <!-- test -->
 
-<div id="carouselExampleIndicators" class="carousel slide">
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
+                        <div id="carouselExampleIndicators" class="carousel slide carrouselOn">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
 
-        <div class="carousel-item active">
-            <img class="rounded mx-auto d-block mt-5 Boxshad" height="300px" src="./pochette/Bob.jpg">
-        </div>
+                                <div class="carousel-item active">
+                                    <img id="5" class="rounded mx-auto d-block mt-5 Boxshad" height="300px" src="./pochette/Bob.jpg" name="album">
+                                </div>
 
-        <div class="carousel-item">
-            <img class="rounded mx-auto d-block mt-5 Boxshad" height="300px" src="./pochette/mutter.jpg">
-        </div>
+                                <div class="carousel-item">
+                                    <img id="3" class="rounded mx-auto d-block mt-5 Boxshad" height="300px" src="./pochette/mutter.jpg" name="album">
+                                </div>
 
-        <div class="carousel-item">
-            <img class="rounded mx-auto d-block mt-5 Boxshad" height="300px" src="./pochette/Boby.jpg">
-        </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
-</div>
+                                <div class="carousel-item">
+                                    <img id="7" class="rounded mx-auto d-block mt-5 Boxshad" height="300px" src="./pochette/hollow.jpeg" name="album">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
 
 
 
-                    <!-- AJOUT TITRE CHANSON  -->
-                    <div class="albumlist">
+                  
                         <div>
                             <div class="imgAlbum"></div>
                             <div class="nomAlbum"></div>
                         </div>
-                                <ul class="albumlist"></ul>
+                        <ul class="albumlist"></ul>
+
+
+
+
+
                     </div>
+
+
+
+
+                    <!-- AJOUT TITRE CHANSON  -->
                     <div style="height: 20%;"></div>
                     <div>
                         <ul class="titreajout"></ul>
                     </div>
 
-
-
-</div>
-
-           
-
-
-                <!-- AJOUT TITRE CHANSON  -->
-                <div style="height: 20%;"></div>
-                <div>
-                    <ul class="titreajout"></ul>
                 </div>
-
-            </div>
-            <div class="row lecteur  bg-secondary  rounded-3 mt-3">
-                <div class="col-4 d-flex align-items-center ">
-                    <img class="albumImg rounded-3" src="" alt="">
-                </div>
+                <div class="row lecteur  bg-secondary  rounded-3 mt-3">
+                    <div class="col-4 d-flex align-items-center ">
+                        <img class="albumImg rounded-3" src="" alt="">
+                    </div>
 
 
-                <div class="col-4 d-flex text-center gap-3 justify-content-center align-items-center text-white">
-                    <i class="fa-solid fa-backward fa-lg"></i>
-
-                    <i class="btn fa-regular fa-circle-play fa-lg play text-white"></i>
-                    <i class="fa-regular fa-circle-pause pause btn fa-lg text-white"></i>
-                    <i class="fa-solid fa-forward fa-lg"></i>
+                    <div class="col-4 d-flex text-center gap-3 justify-content-center align-items-center text-white">
+                        <i class="fa-solid fa-backward fa-lg"></i>
 
                         <i class="btn fa-regular fa-circle-play fa-lg play text-white"></i>
                         <i class="fa-regular fa-circle-pause pause btn fa-lg text-white"></i>
                         <i class="fa-solid fa-forward fa-lg"></i>
+
 
                     </div>
                     <div class="col-4 d-flex text-center justify-content-center align-items-center">
@@ -179,10 +175,7 @@
                     </div>
 
                 </div>
-                <div class="col-4 d-flex text-center justify-content-center align-items-center">
-                    <input type="range" class="form-range" id="volume" name="volume" min="0" max="10" />
 
-                </div>
             </div>
 
         </div>
