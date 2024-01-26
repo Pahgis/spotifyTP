@@ -24,9 +24,16 @@
     <div class="container-fluid border container-pc" style="height: 100vh;">
         <div class="row">
             <div class="col-3 border rounded-3 border-black m-3 biblio " style="height: 97vh;">
+            <div style="height: 40%;">
                 <form action="" method="post">
                     <input type="text" name="" class="form-control" id="searchbar2">
                 </form>
+            </div>
+            <div>
+                <h3 class="text-white">Playlist</h3>
+                <ul class="playlist"></ul>
+            </div>
+                
             </div>
             <div class="col-lg-9 col-12 principal my-3 ">
                 <div class="bodyMobile border border-black rounded-3 overflow-scroll" style="height: 82vh;">
@@ -48,43 +55,7 @@
                         </div>
                     </div>
 
-                    <!--
-                    <div class="container-fluid ">
-
-
-                        <div>
-                            <button class="button-36" role="button">S'inscrire</button>
-                            <button class="button-36" role="button">Se connecter</button>
-                        </div>
-                        <div class="d-flex justify-content-evenly flex-column flex-md-row">
-                            <div class="text-center">
-                                <p class="fs-2">ALBUMS</p>
-                            </div>
-
-
-
-
-                            <div>
-                                <img class="rounded mx-auto d-block mt-5 Boxshad" height="300px" src="./pochette/Bob.jpg">
-                            </div>
-
-                            <div>
-                                <img class="rounded mx-auto d-block mt-5 Boxshad" height="300px" src="./pochette/mutter.jpg">
-                            </div>
-
-                            <div>
-                                <img class="rounded mx-auto d-block mt-5 Boxshad" height="300px" src="./pochette/Boby.jpg">
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                    <div>
-                        <img class="rounded mx-auto d-block mt-5 Boxshad" height="300px" src="./pochette/eminem.jpg">
-                    </div>
--->
-
+                    
 
     <div class="container-fluid">
 
@@ -97,7 +68,7 @@
 
 
 
-/*
+<!--
 
                 <div id="carouselExampleIndicators" class="carousel slide">
                     <div class="carousel-indicators">
@@ -142,7 +113,7 @@
 
     
            
-*/
+-->
                         <!-- test -->
 
                         <div id="carouselExampleIndicators" class="carousel slide carrouselOn">
